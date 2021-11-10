@@ -10,7 +10,7 @@ interface myLoaderProps {
 } 
 
 const myLoader = ({ src, width, quality }: myLoaderProps) => {
-  return `https://example.com/${src}?w=${width}&q=${quality || 75}`
+  return `${process.env.NEXT_PUBLIC_BASE_PATH || ''}${src}?w=${width}&q=${quality || 75}`
 }
 
 
