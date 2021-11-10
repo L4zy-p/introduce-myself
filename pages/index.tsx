@@ -20,7 +20,7 @@ const Home: NextPage = () => {
       <Head>
         <title>L4zy-p</title>
         <meta name="description" content="Welcome to my page" />
-        <link rel="icon" href="/favicon.png" />
+        <link rel="icon" href={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/favicon.png`} />
       </Head>
       <div className='layout'>
         <nav className='nav'>
