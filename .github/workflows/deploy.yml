@@ -33,7 +33,7 @@ jobs:
       run: npm run build
       env:
         NEXT_PUBLIC_BASE_PATH: /l4zy-p
-    - run: npm run export
+    - run: npm run start
       env:
         NEXT_PUBLIC_BASE_PATH: /l4zy-p
     - run: touch ./out/.nojekyll
