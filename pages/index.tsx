@@ -32,13 +32,13 @@ const Home: NextPage = () => {
         <main>
           <section id='me'>
             <Image src='/sloth.png' width={512} height={512} alt='' />
-            <p className='me-title'>Hi, I'm L4zy-p</p>
+            <p className='me-title'>{`Hi, I'm L4zy-p`}</p>
             <p className='me-subtitle'>Web developer | Anime Lover | Traveler</p>
           </section>
           <section id='about'>
             <h2>About me</h2>
-            <p>Hi there, My name is Pacharamai. I'm small and shy developer seeking fun in life. </p>
-            <h4>Here are a few technologies I’ve been working with recently</h4>
+            <p>{`Hi there, My name is Pacharamai. I'm small and shy developer seeking fun in life. `}</p>
+            <h4>{`Here are a few technologies I’ve been working with recently`}</h4>
             <ul>
               <li>Javascript</li>
               <li>Typescript</li>
