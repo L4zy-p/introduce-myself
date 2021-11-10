@@ -16,7 +16,7 @@ const Home: NextPage = () => {
         <nav className='nav'>
           <div className="nav-content">
             <a className='nav-logo'>
-              <img src='/favicon.png' alt='' />
+              <Image src='/favicon.png' width={32} height={32} alt='' />
             </a>
             <ul className='nav-menu'>
               <li className='nav-menu-item'><a href='#'>About</a></li>
