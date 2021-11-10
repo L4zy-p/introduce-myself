@@ -31,7 +31,7 @@ const Home: NextPage = () => {
         </nav>
         <main>
           <section id='me'>
-            <img src='/sloth.png' alt='' />
+            <Image src='/sloth.png' width={512} height={512} alt='' />
             <p className='me-title'>Hi, I'm L4zy-p</p>
             <p className='me-subtitle'>Web developer | Anime Lover | Traveler</p>
           </section>
