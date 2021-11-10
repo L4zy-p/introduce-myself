@@ -3,6 +3,16 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { GitHub, LinkedIn, Instagram, Twitter } from '@mui/icons-material'
 
+interface myLoaderProps {
+  src: string
+  width: number
+  quality?: number
+} 
+
+const myLoader = ({ src, width, quality }: myLoaderProps) => {
+  return `https://example.com/${src}?w=${width}&q=${quality || 75}`
+}
+
 
 const Home: NextPage = () => {
   return (
@@ -16,7 +26,7 @@ const Home: NextPage = () => {
         <nav className='nav'>
           <div className="nav-content">
             <a className='nav-logo'>
-              <Image src='/favicon.png' width={32} height={32} alt='' />
+              <Image loader={myLoader} src='/favicon.png' width={32} height={32} alt='' />
             </a>
             <ul className='nav-menu'>
               <li className='nav-menu-item'><a href='#'>About</a></li>
@@ -31,7 +41,7 @@ const Home: NextPage = () => {
         </nav>
         <main>
           <section id='me'>
-            <Image src='/sloth.png' width={512} height={512} alt='' />
+            <Image loader={myLoader} src='/sloth.png' width={512} height={512} alt='' />
             <p className='me-title'>{`Hi, I'm L4zy-p`}</p>
             <p className='me-subtitle'>Web developer | Anime Lover | Traveler</p>
           </section>
