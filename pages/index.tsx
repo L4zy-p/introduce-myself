@@ -56,7 +56,7 @@ const Home: NextPage = () => {
             <div className='portfolio-list'>
               <div className='portfolio-item'>
                 <div className='image-box'>
-                  <Image loader={myLoader} src='/portfolio/elms.png' width={1898} height={903} />
+                  <Image loader={myLoader} src='/elms.png' width={1898} height={903} />
                 </div>
                 <div className='description'>
                   <h2>eLeave management system</h2>
@@ -71,7 +71,7 @@ const Home: NextPage = () => {
               </div>
               <div className='portfolio-item'>
                 <div className='image-box'>
-                  <Image loader={myLoader} src='/portfolio/queue.png' width={1898} height={903} />
+                  <Image loader={myLoader} src='/queue.png' width={1898} height={903} />
                 </div>
                 <div className='description'>
                   <h2>Queue web call</h2>
@@ -85,7 +85,7 @@ const Home: NextPage = () => {
               </div>
               <div className='portfolio-item'>
                 <div className='image-box'>
-                  <Image loader={myLoader} src='/portfolio/shimakaze.png' width={1898} height={903} />
+                  <Image loader={myLoader} src='/shimakaze.png' width={1898} height={903} />
                 </div>
                 <div className='description'>
                   <h2>Shimakaze</h2>
