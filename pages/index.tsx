@@ -30,7 +30,7 @@ const Home: NextPage = () => {
               <Image loader={myLoader} src='/owl.png' width={512} height={512} alt='' />
             </div>
             <p className='me-title'>{`Hi, I'm L4zy-p`}</p>
-            <p className='me-subtitle'>Web developer | Anime Lover | Traveler</p>
+            <p className='me-subtitle'>Web developer | Anime Lover | Looking for something?</p>
           </section>
           <section id='about'>
             <h2>About me</h2>
