@@ -108,13 +108,13 @@ const Home: NextPage = () => {
         <div className='social-left'>
           <ul className='social-list'>
             <li>
-              <a target='_blank' href='https://github.com/L4zy-p'><GitHub /></a>
+              <a target='_blank' href='https://github.com/L4zy-p' rel='noopener noreferrer'><GitHub /></a>
             </li>
             <li>
-              <a target='_blank' href='https://www.linkedin.com/in/pacharamai-h/'><LinkedIn /></a>
+              <a target='_blank' href='https://www.linkedin.com/in/pacharamai-h/' rel='noopener noreferrer'><LinkedIn /></a>
             </li>
             <li>
-              <a target='_blank' href='https://medium.com/@L4zy-p'><FaMediumM /></a>
+              <a target='_blank' href='https://medium.com/@L4zy-p' rel='noopener noreferrer'><FaMediumM /></a>
             </li>
           </ul>
         </div>
