@@ -1,13 +1,14 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
-import { GitHub, LinkedIn, Instagram, Twitter } from '@mui/icons-material'
+import { GitHub, LinkedIn } from '@mui/icons-material'
+import { FaMediumM } from 'react-icons/fa'
 
 interface myLoaderProps {
   src: string
   width: number
   quality?: number
-} 
+}
 
 const myLoader = ({ src, width, quality }: myLoaderProps) => {
   return `${process.env.NEXT_PUBLIC_BASE_PATH || ''}${src}?w=${width}&q=${quality || 75}`
@@ -19,29 +20,15 @@ const Home: NextPage = () => {
     <>
       <Head>
         <title>L4zy-p</title>
-        <meta name="description" content="Welcome to my page" />
-        <link rel="icon" href={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/favicon.png`} />
+        <meta name='description' content='Welcome to my page' />
+        <link rel='icon' href={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/favicon.png`} />
       </Head>
       <div className='layout'>
-        <nav className='nav'>
-          <div className="nav-content">
-            <a className='nav-logo'>
-              <Image loader={myLoader} src='/favicon.png' width={32} height={32} alt='' />
-            </a>
-            <ul className='nav-menu'>
-              <li className='nav-menu-item'><a href='#'>About</a></li>
-              <li className='nav-menu-item'><a href='#'>Experince</a></li>
-              <li className='nav-menu-item'><a href='#'>Portfolio</a></li>
-              <li className='nav-menu-item'><a href='#'>Contact</a></li>
-              <li className='nav-menu-item'>
-                <button>Resume</button>
-              </li>
-            </ul>
-          </div>
-        </nav>
         <main>
           <section id='me'>
-            <Image loader={myLoader} src='/sloth.png' width={512} height={512} alt='' />
+            <div className='img-logo'>
+              <Image loader={myLoader} src='/owl.png' width={512} height={512} alt='' />
+            </div>
             <p className='me-title'>{`Hi, I'm L4zy-p`}</p>
             <p className='me-subtitle'>Web developer | Anime Lover | Traveler</p>
           </section>
@@ -61,26 +48,73 @@ const Home: NextPage = () => {
             <ul>
               <li>Open Source Technology Frontend Developer Jun 2018 - Present</li>
               <li>Tovho System PHP Programer Aug 2017 - Apr 1018</li>
+              <li>Intelligent Millionaire Game Developer Aug 2016 - Dec 1016 (Internship)</li>
             </ul>
           </section>
           <section id='portfolio'>
             <h2>Portfolio</h2>
-            
+            <div className='portfolio-list'>
+              <div className='portfolio-item'>
+                <div className='image-box'>
+                  <Image loader={myLoader} src='/portfolio/elms.png' width={1898} height={903} />
+                </div>
+                <div className='description'>
+                  <h2>eLeave management system</h2>
+                  <p>- Management system for sending leave mails in the organization</p>
+
+                  <ul className='tech-list'>
+                    <li>React</li>
+                    <li>Next</li>
+                    <li>Nx</li>
+                  </ul>
+                </div>
+              </div>
+              <div className='portfolio-item'>
+                <div className='image-box'>
+                  <Image loader={myLoader} src='/portfolio/queue.png' width={1898} height={903} />
+                </div>
+                <div className='description'>
+                  <h2>Queue web call</h2>
+                  <p>- Management system for call queue customer in the hospital</p>
+
+                  <ul className='tech-list'>
+                    <li>React</li>
+                    <li>Mqtt</li>
+                  </ul>
+                </div>
+              </div>
+              <div className='portfolio-item'>
+                <div className='image-box'>
+                  <Image loader={myLoader} src='/portfolio/shimakaze.png' width={1898} height={903} />
+                </div>
+                <div className='description'>
+                  <h2>Shimakaze</h2>
+                  <p>- Web page and management booking tour</p>
+
+                  <ul className='tech-list'>
+                    <li>Php</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section id='contact'>
+            <h2>Contact</h2>
+            <ul>
+              <li>hemhongsa.p94@gmail.com</li>
+            </ul>
           </section>
         </main>
         <div className='social-left'>
           <ul className='social-list'>
             <li>
-              <a href="#"><GitHub /></a>
+              <a target='_blank' href='https://github.com/L4zy-p'><GitHub /></a>
             </li>
             <li>
-              <a href="#"><LinkedIn /></a>
+              <a target='_blank' href='https://www.linkedin.com/in/pacharamai-h/'><LinkedIn /></a>
             </li>
             <li>
-              <a href="#"><Instagram /></a>
-            </li>
-            <li>
-              <a href="#"><Twitter /></a>
+              <a target='_blank' href='https://medium.com/@L4zy-p'><FaMediumM /></a>
             </li>
           </ul>
         </div>
