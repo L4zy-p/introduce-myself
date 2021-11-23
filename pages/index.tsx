@@ -44,7 +44,7 @@ const Home: NextPage = () => {
             </ul>
           </section>
           <section id='experince'>
-            <h2>Experince</h2>
+            <h2>Experience</h2>
             <ul>
               <li>Open Source Technology Frontend Developer Jun 2018 - Present</li>
               <li>Tovho System PHP Programer Aug 2017 - Apr 1018</li>
@@ -52,7 +52,7 @@ const Home: NextPage = () => {
             </ul>
           </section>
           <section id='portfolio'>
-            <h2>Portfolio</h2>
+            <h2>Portfolios</h2>
             <div className='portfolio-list'>
               <div className='portfolio-item'>
                 <div className='image-box'>
